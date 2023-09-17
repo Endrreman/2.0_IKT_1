@@ -1,27 +1,29 @@
-.container{
-    height: 100vh;
-    width: 100vw;
+h1{
+    text-align: center;
+    font-size: 5rem;
+    font-family: 'Caveat', cursive;
 }
+/*Main cols */
 .row{
     flex-basis: auto;
-    height: 100vh;
+    height: 50vh;
 }
 .col{
     margin: auto;
-    height: 100vh;
-    background-color: rgba(137, 43, 226, 0.5);
+    height: 50vh;
+    background-color: rgb(229,210,196);
     transition: all 0.5s ease-in-out;
 
     border: 1px solid black;
 }
+.col:hover{
+    flex-basis: 95%;
+    background-color: rgb(189,148,120);
+}
 .col_content{
-    transform: scale(0);
+    display: none;
     transition: all 0.5s ease-in-out;
 }
-.col:hover{
-    flex-basis: 90%;
-    background-color: rgba(120, 199, 230, 0.5);
-}
 .col:hover .col_content{
-    transform: scale(1);
+    display:contents;
 }
