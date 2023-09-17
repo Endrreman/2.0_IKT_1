@@ -1,0 +1,10 @@
+body{
+    box-sizing: border-box;
+    word-break: break-word;
+    scroll-behavior: smooth;
+
+    width: 100;
+    height: 100;
+    margin: 0;
+    padding: 0;
+}
