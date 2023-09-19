@@ -7,3 +7,17 @@ body, html{
     padding-left: 0;
     background-color: rgb(255, 237, 224);
 }
+
+/*     Scrollbar     */
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgba(66, 66, 66, 0.733);
+    border: 3px solid rgb(255, 237, 224);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background-image: linear-gradient(45deg, rgb(146, 97, 56), rgb(248, 220, 200));
+}

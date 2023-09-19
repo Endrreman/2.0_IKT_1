@@ -4,28 +4,28 @@ h1{
     font-family: 'Caveat', cursive;
     line-height: 15vh;
 }
-
     /*Main cols */
-.row{
+.main_row{
     width: 100%;
+    margin-inline: 0;
     flex-basis: auto;
 }
-.col{
+.main_row > .col{
     padding: 0;
     height: 70vh;
-    background-color: rgb(229,210,196);
+    /*background-color: rgb(229,210,196);*/
 
     transition: all 1s ease-in-out;
 }
-.col:hover{
+.main_row > .col:hover{
     flex-basis: 85%;
 }
 .col1{
-    background: url(https://meowlivia.s3.us-east-2.amazonaws.com/codepen/background/desert.jpg) no-repeat center center/cover;}
+    background: url(img/dog1.jpg) no-repeat center center/cover;}
 .col2{
-    background: url(https://meowlivia.s3.us-east-2.amazonaws.com/codepen/background/forest.jpg) no-repeat center center/cover;}
+    background: url(img/dog2.jpg) no-repeat center center/cover;}
 .col3{
-    background: url(https://meowlivia.s3.us-east-2.amazonaws.com/codepen/background/glacier.jpg) no-repeat center center/cover;}
+    background: url(img/cat.jpg) no-repeat center center/cover;}
 
     /*col contents*/
 .col_content{
