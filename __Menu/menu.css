@@ -4,12 +4,14 @@ h1{
     font-family: 'Caveat', cursive;
     line-height: 15vh;
 }
+
     /*Main cols */
 .row{
+    width: 100%;
     flex-basis: auto;
 }
 .col{
-    margin: auto 0;
+    padding: 0;
     height: 70vh;
     background-color: rgb(229,210,196);
 
@@ -17,23 +19,21 @@ h1{
 }
 .col:hover{
     flex-basis: 85%;
-    background-color: rgb(189,148,120);
 }
-.col_content{
-    margin: auto 0;
-    display: none;
-    transition: all 1s ease-in-out;
-}
-.col:hover .col_content{
-    display:contents;
-}
-    /*Cols*/
 .col1{
-    background: url(https://meowlivia.s3.us-east-2.amazonaws.com/codepen/background/desert.jpg) no-repeat center center/cover;
-}
+    background: url(https://meowlivia.s3.us-east-2.amazonaws.com/codepen/background/desert.jpg) no-repeat center center/cover;}
 .col2{
-    background: url(https://meowlivia.s3.us-east-2.amazonaws.com/codepen/background/forest.jpg) no-repeat center center/cover;
-}
+    background: url(https://meowlivia.s3.us-east-2.amazonaws.com/codepen/background/forest.jpg) no-repeat center center/cover;}
 .col3{
-    background: url(https://meowlivia.s3.us-east-2.amazonaws.com/codepen/background/glacier.jpg) no-repeat center center/cover;
+    background: url(https://meowlivia.s3.us-east-2.amazonaws.com/codepen/background/glacier.jpg) no-repeat center center/cover;}
+
+    /*col contents*/
+.col_content{
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    background: url(https://meowlivia.s3.us-east-2.amazonaws.com/codepen/background/forest.jpg) no-repeat center center/cover;
+
+    display: none;
 }
+/*.col:hover > .col_content   Anim in anims.css */
