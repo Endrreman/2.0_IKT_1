@@ -7,7 +7,14 @@
     color: rgb(75, 46, 22);
     text-align: center;
     font-family: 'Caveat', cursive;
-  }
+}
+.gold{
+    color: #c09018;
+}
+.crown{
+    cursor: url("img/crown_32x32.png"), auto;
+}
+
 .experiment-title,
 .experiment-title * {
     -webkit-animation: cray 6s infinite steps(50);
