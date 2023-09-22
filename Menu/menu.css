@@ -33,8 +33,21 @@
     opacity: 0;
     transition: height 0ms 500ms, opacity 1s 0ms;
 }
-.col:hover  .col_content {
+.col_img{
+    /*col img fix (nem tudom a végső designal hoyg fog működni)*/
+    /*lehet position: absolute; kell majd de ahoz kell végső designe */
+    /*Még kell finomítani a megjelenést*/
+    height: 0;
+    opacity: 0;
+    transition: all 0.5s 0.7s;
+}
+
+.col:hover  .col_content{
     height: 100%;
     opacity: 1;
     transition: height 0ms 350ms, opacity 1s 0ms;
+}
+.col:hover .col_img {
+    height: 50%;
+    opacity: 1;
 }
