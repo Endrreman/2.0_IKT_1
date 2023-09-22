@@ -2,12 +2,13 @@
 .main_row{
     width: 100%;
     margin-inline: 0;
+    padding: 5px;
     flex-basis: auto;
 }
 .main_row > .col{
-    margin: 5px;
+    margin: 2px;
     padding: 0;
-    height: 79vh;
+    height: 78.5vh;
     /*background-color: rgb(229,210,196);*/
 
     transition: flex 1s ease-in-out;
