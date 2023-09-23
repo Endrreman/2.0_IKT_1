@@ -1,8 +1,8 @@
 .hamToggle{
    display: block;
    position: fixed;
-   top: 50px;
-   right: 50px;
+   top: 40px;
+   right: 40px;
    
    z-index: 1;
    
@@ -44,7 +44,7 @@
   margin-bottom: 5px;
   position: relative;
   
-  background: #222222;
+  background: rgb(75, 46, 22);
   border-radius: 3px;
   
   z-index: 1;
@@ -67,7 +67,7 @@
 .hamToggle input:checked ~ span{
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+  background: rgb(75, 46, 22);
 }
 .hamToggle input:checked ~ span:nth-last-child(3){
   opacity: 0;
@@ -86,35 +86,45 @@
 
 .ham{
   position: absolute;
-  top: 45px;
-  right: -12px;
+  /*top: 45px;
+  right: -12px;*/
+  top: -30px;
+  right: 50px;
   padding-left: 0;
 
-  
+  display: flex;
+  flex-direction: row;
+
 
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
   
   transform-origin: 0% 0%;
-  transform: translate(10vw, 0);
+  transform: translate(20vw, 0);
   
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
 .ham li{
-    margin-bottom: 15px;
+    margin-right: 11px;
     padding: 1rem;
     background: #dabe8a;
-    border-radius: 10px;
+    border-radius: 15px;
+    transition: all .5s;
 }
 
 .ham_img{
     width: 40px;
     transition: all .5s;
 }
+.ham li:hover{
+  background-color: #c4a772;
+  scale: 1.1;
+}
 .ham_img:hover{
     scale: 1.2;
+
 }
 
 

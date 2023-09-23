@@ -34,6 +34,12 @@
     opacity: 0;
     transition: height 0ms 500ms, opacity 1s 0ms;
 }
+.col:hover  .col_content{
+    height: 100%;
+    opacity: 1;
+    transition: height 0ms 350ms, opacity 1s 0ms;
+}
+
 .col_img{
     /*
     col img fix (nem tudom a végső designal hoyg fog működni)
@@ -48,12 +54,19 @@
     opacity: 1;
 }
     */
+   transition: all 0.5s 0.7s;
    position: absolute;
-   height: 50%;
+   height: 0;
+   opacity: 0;
+}
+.col:hover .col_img {
+    height: 50%;
+    opacity: 1;
 }
 
-.col:hover  .col_content{
-    height: 100%;
-    opacity: 1;
-    transition: height 0ms 350ms, opacity 1s 0ms;
+.in_row{
+    width: 100%;
+}
+.in_col{
+    background-color: aqua;
 }
