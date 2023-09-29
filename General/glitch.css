@@ -1,9 +1,9 @@
 .experiment-title {
-    line-height: 20vh;
+    line-height: 18vh;
     width: 100%;
 
     outline: none;
-    font-size: 9rem;
+    font-size: 7.5rem;
     color: rgb(75, 46, 22);
     text-align: center;
     font-family: 'Caveat', cursive;
