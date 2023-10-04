@@ -1,18 +1,42 @@
 footer{
-    /*height: 18.5vh;*/
-    height: 40vh;
+    height: 30vh;           /*Placeholder*/
     background-color: rgb(32, 32, 32);
 }
 footer .row{
     width: 100%;
     margin-inline: 0;
 }
-footer .col{
+footer > .row >.col{
     padding: 0;
     background-color: rgba(255, 255, 255, .1);
 }
+
 .tutels_glitch{
     font-size: 3rem;
     letter-spacing: 10px;
     font-family: 'Barlow', sans-serif;
+
+    margin-top: 1rem;
+    margin-left: 3rem;
+}
+
+
+footer p{
+    color: white;
+    font-size: 1.3rem;
+    margin: 0;
+    margin-left: .2rem;
+}
+.feet_pick{
+    height: 35px;
+    margin: 0;
+    margin-left: .3rem;
+    margin-bottom: .3rem;
+    transition: all .3s;
+}
+.x{
+    border-radius: 10px;
+}
+.feet_pick:hover{
+    scale: 1.2;
 }
