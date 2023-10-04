@@ -6,7 +6,7 @@ footer .row{
     width: 100%;
     margin-inline: 0;
 }
-footer > .row >.col{
+footer .col{
     padding: 0;
     background-color: rgba(255, 255, 255, .1);
 }
@@ -20,22 +20,32 @@ footer > .row >.col{
     margin-left: 3rem;
 }
 
-
-footer p{
+footer h3{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
     color: white;
     font-size: 1.3rem;
     margin: 0;
     margin-left: .2rem;
+    margin-top: 1rem;
 }
+footer p{
+    color: white;
+    margin: 0;
+    margin-left: .4rem;
+    font-family: 'Barlow', sans-serif;
+}
+
 .feet_pick{
     height: 35px;
     margin: 0;
-    margin-left: .3rem;
-    margin-bottom: .3rem;
+    margin-left: .6rem;
+    margin-top: .4rem;
+    margin-bottom: .4rem;
     transition: all .3s;
 }
 .x{
-    border-radius: 10px;
+    border-radius: 8px;
 }
 .feet_pick:hover{
     scale: 1.2;
