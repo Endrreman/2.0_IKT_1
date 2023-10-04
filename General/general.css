@@ -19,5 +19,5 @@ body, html{
 }
 ::-webkit-scrollbar-thumb{
     border-radius: 20px;
-    background-image: linear-gradient(45deg, rgb(146, 97, 56), rgb(248, 220, 200));
+    background-image: linear-gradient(0deg, rgb(75, 46, 22), rgb(248, 220, 200));
 }
