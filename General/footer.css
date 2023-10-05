@@ -34,8 +34,12 @@ footer p{
     margin: 0;
     margin-left: .4rem;
     font-family: 'Barlow', sans-serif;
+}footer a{
+    text-decoration: none;
 }
-
+footer > .row > .col:nth-child(1) h3{
+    margin-left: 4rem;
+}
 .feet_pick{
     height: 35px;
     margin: 0;
