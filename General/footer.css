@@ -8,7 +8,7 @@ footer .row{
 }
 footer .col{
     padding: 0;
-    background-color: rgba(255, 255, 255, .02);
+    /*background-color: rgba(255, 255, 255, .02);*/
 }
 
 .tutels_glitch{
@@ -29,10 +29,21 @@ footer h3{
     margin-left: .2rem;
     margin-top: 1rem;
 }
+footer h4{
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.2rem;
+    margin-left: .4rem;
+}
+footer a{
+    color: white;
+}
+footer a:hover{
+    color: #c09018;
+}
 footer p{
     color: white;
     margin: 0;
-    margin-left: .4rem;
+    margin-left: .6rem;
     font-family: 'Barlow', sans-serif;
 }footer a{
     text-decoration: none;
@@ -41,7 +52,7 @@ footer > .row > .col:nth-child(1) h3{
     margin-left: 4rem;
 }
 .feet_pick{
-    height: 35px;
+    height: 30px;
     margin: 0;
     margin-left: .6rem;
     margin-top: .4rem;
