@@ -101,7 +101,7 @@
   /* to stop flickering of text in safari */
   
   transform-origin: 0% 0%;
-  transform: translate(20vw, 0);
+  transform: translate(500px, 0);
   
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }

@@ -1,0 +1,20 @@
+.main_row > .col{
+    transition: flex .9s 0s ease-in-out;     /*felx ki*/  /*nem leht késleltetés bug(összecsúszás) miatt*/
+}
+.main_row > .col:hover{
+    transition: flex .9s 0s ease-in-out;     /*felx be*/
+}
+
+.col_content{
+    transition: height 0ms .3s, opacity .3s 0s;    /*content ki*/
+}
+.col:hover  .col_content{
+    transition: height 0ms .3s, opacity .5s .7s;  /*content be*/
+}
+
+.col_img{
+   transition: all 0.5s 0.5s;       /*img ki*/
+}
+.main_row > .col:hover .col_img {
+    transition: all 0.5s 0.5s;      /*img be*/
+}

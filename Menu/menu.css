@@ -3,25 +3,25 @@
     width: 100%;
     margin-inline: 0;
     padding: 0.7vw;
-    flex-basis: auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 .main_row > .col{
     margin: 2px;
     padding: 0;
     height: 78.5vh;
+    flex-grow: 1;
     /*background-color: rgb(229,210,196);*/
-
-    transition: flex 1s ease-in-out;
 }
 .main_row > .col:hover{
     flex-basis: 80%;
 }
 
-.col1{
+.main_row > .col:nth-child(1){
     background: url(img/dog1.jpg) no-repeat center center/cover;}
-.col2{
+.main_row > .col:nth-child(2){
     background: url(img/dog2.jpg) no-repeat center center/cover;}
-.col3{
+.main_row > .col:nth-child(3){
     background: url(img/cat.jpg) no-repeat center center/cover;}
 
     /*col contents*/
@@ -32,41 +32,41 @@
     height: 0;
     width: 100%;
     opacity: 0;
-    transition: height 0ms 500ms, opacity 1s 0ms;
 }
 .col:hover  .col_content{
     height: 100%;
     opacity: 1;
-    transition: height 0ms 350ms, opacity 1s 0ms;
 }
 
 .col_img{
-    /*
-    col img fix (nem tudom a végső designal hoyg fog működni)
-    lehet position: absolute; kell majd de ahoz kell végső designe
-    Még kell finomítani a megjelenést
-    height: 0;
-    opacity: 0;
-    transition: all 0.5s 0.7s;
-
-.col:hover .col_img {
-    height: 50%;
-    opacity: 1;
-}
-    */
-   transition: all 0.5s 0.7s;
    position: absolute;
    height: 0;
    opacity: 0;
 }
-.col:hover .col_img {
+.main_row > .col:hover .col_img {
     height: 50%;
     opacity: 1;
 }
 
 .in_row{
     width: 100%;
+    height: 100%;
+    margin: 0;
 }
 .in_col{
     background-color: aqua;
+
+}
+
+.col_content:nth-child(1) .in_col:nth-child(1){
+    background-image: url(https://pbs.twimg.com/media/EXwjUklWsAEoks8.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.col_content:nth-child(1) .in_col:nth-child(2){
+    background-image: url(https://www.meme-arsenal.com/memes/942ff2a64d75c19f2f1a92bc849a64c6.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
 }

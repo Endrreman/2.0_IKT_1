@@ -1,5 +1,56 @@
 footer{
-    /*height: 18.5vh;*/
-    height: 40vh;
-    background-color: rgb(48, 48, 48);
+    min-height: 30vh;           /*Placeholder*/
+    background-color: #271300;
+}
+footer .row{
+    width: 100%;
+    margin-inline: 0;
+}
+footer .col{
+    padding: 0;
+    background-color: rgba(255, 255, 255, .02);
+}
+
+.tutels_glitch{
+    font-size: 3rem;
+    letter-spacing: 10px;
+    font-family: 'Barlow', sans-serif;
+
+    margin-top: 1rem;
+    margin-left: 3rem;
+}
+
+footer h3{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
+    color: white;
+    font-size: 1.3rem;
+    margin: 0;
+    margin-left: .2rem;
+    margin-top: 1rem;
+}
+footer p{
+    color: white;
+    margin: 0;
+    margin-left: .4rem;
+    font-family: 'Barlow', sans-serif;
+}footer a{
+    text-decoration: none;
+}
+footer > .row > .col:nth-child(1) h3{
+    margin-left: 4rem;
+}
+.feet_pick{
+    height: 35px;
+    margin: 0;
+    margin-left: .6rem;
+    margin-top: .4rem;
+    margin-bottom: .4rem;
+    transition: scale .25s ease-in-out;
+}
+.x{
+    border-radius: 8px;
+}
+.feet_pick:hover{
+    scale: 1.2;
 }
