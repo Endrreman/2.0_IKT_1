@@ -7,6 +7,7 @@ header h1{
 }
 /*!       Main       */
 main{
+    padding-left: 2rem;
     width: 80%;
     margin-inline: auto;
     float: left;
@@ -17,6 +18,9 @@ main p{
 }
 i{
     color: #c09018;
+}
+main .row{
+    width: 100%;
 }
 main .row .col{
     color: white;

@@ -1,20 +1,21 @@
 nav{
-    height: 3000px;
+    height: 1000px;
     width: 15%;
     float: left;
 }
 nav > div{
     position: sticky;
-    top: 1rem;
+    top: 0;
     margin-left: -1rem;
 
-    background-color: rgba(255, 255, 255, 0.1);
-    clip-path: polygon(0 0,calc(100% - 40.00px) 0,100% 40.00px,100% 100%,0 100%);
+    background-color: rgb(0, 0, 0, .1);
+    clip-path: polygon(0 0,100% 0,100% calc(100% - 40.00px),calc(100% - 40.00px) 100%,0 100%);
 }
 
 /*      Nav text*/
 nav ul{
     list-style: none;
+
 }
 nav li{
     margin-bottom: .5rem;
