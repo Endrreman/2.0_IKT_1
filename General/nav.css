@@ -1,0 +1,48 @@
+nav{
+    height: 3000px;
+    width: 15%;
+    float: left;
+}
+nav > div{
+    position: sticky;
+    top: 1rem;
+    margin-left: -1rem;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    clip-path: polygon(0 0,calc(100% - 40.00px) 0,100% 40.00px,100% 100%,0 100%);
+}
+
+/*      Nav text*/
+nav ul{
+    list-style: none;
+}
+nav li{
+    margin-bottom: .5rem;
+}
+nav a{
+    transition: color 0.4s;
+    color: rgb(75, 46, 22);
+    font-family: 'Caveat', cursive;
+    text-decoration: none;
+    margin-left: -.9rem;
+    padding-left: 1rem;
+}
+nav a:hover{
+    color: #c09018;
+}
+.nav_a{
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+.nav_p{
+    font-size: 1.4rem;
+    padding-left: 1rem;
+}
+
+/*      When on screen addition*/
+.active{
+    color: #c09018;
+    font-weight: bold;
+    border-left: 3px solid #c09018;
+}

@@ -1,0 +1,40 @@
+/*!       Header       */
+header h1{
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-size: 6rem;
+    color: rgb(75, 46, 22);
+}
+/*!       Main       */
+main{
+    width: 80%;
+    margin-inline: auto;
+    float: left;
+}
+
+main p{
+    text-indent: .5rem;
+}
+i{
+    color: #c09018;
+}
+main .row .col{
+    color: white;
+    min-height: 20rem;
+    transition: box-shadow .3s;
+}
+main .row .col:hover{
+    box-shadow: inset 0 0 1000px 1000px rgb(0, 0, 0, .4);
+}
+main .row .col:nth-child(1){
+    background: url(img/pusztai\ macska.jpeg) no-repeat center center/cover;
+}
+main .row .col:nth-child(2){
+    background: url(img/afrikai\ aranymacska.jpg) no-repeat center center/cover;
+}
+main .row .col:nth-child(3){
+    background: url(img/Acinonyx\ aicha.jpg) no-repeat center center/cover;
+}
+main .row .col:nth-child(4){
+    background: url(img/cibetmacskafélék.jpg) no-repeat center center/cover;
+}

@@ -2,17 +2,83 @@
 <html lang="hun">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Icon-->
+    <link rel="icon" type="image/x-icon" href="../../General/img/dog_icon.png">
+<!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link href="style.css" rel="stylesheet">
-     <title>Macskák</title>
+<!--ScrollOut-->
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+<!--Spitting-->
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+<!--CSS-->
+    <link rel="stylesheet" href="../../General/general.css">
+    <link rel="stylesheet" href="../../General/glitch.css">
+    <link rel="stylesheet" href="../../General/glitch_2.0.css">
+    <link rel="stylesheet" href="../../General/anims.css">
+    <link rel="stylesheet" href="../../General/footer.css">
+    <link rel="stylesheet" href="../../General/nav.css">
+<!--Hamburger CSS-->
+    <link rel="stylesheet" href="../../Hamburger/ham_left.css">
+<!--Own CSS-->
+    <link rel="stylesheet" href="ficli.css">
+<!--Font family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!--font-family: 'Caveat', cursive;-->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+        <!--font-family: 'Barlow', sans-serif;-->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200&display=swap" rel="stylesheet">
+        <!--font-family: 'Nova Mono', monospace;-->
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
+
+    <title>Macskák</title>
 </head>
 <body>
-    <main>
+    <div class="hamToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+            <ul class="ham">
+                <a  href="https://github.com/Endrreman/2.0_IKT_1" target="_blank">
+                    <li><img class="ham_img" src="../../Hamburger/img/github.png" alt=""></li>
+                </a>
+                <a href="">
+                    <li><img class="ham_img" src="../../Hamburger/img/google-drive.png" alt=""></li>
+                </a>
+            </ul>
+    </div>
+    <header>
         <h1>Macskák</h1>
+    </header>
+    <nav>
         <div>
-            <h2>Macska biológia</h2>
-            <p>A macska másnéven házi macska egy kisebb termetű húsevő emlős amit az emberek körülbelül 4000 éve háziasítottak Egyiptomban. Latin neve <b>Felis silvestris catus</b></p>
+            <ul>
+                <li class="nav_a"><a id="nav_bio" href="#nav-1">Macska biológia</a></li>
+                <li class="nav_a"><a id="nav_sajat" href="#nav-2">A Saját macskám</a></li>
+
+            <!--
+                <li class="nav_a"><a id="nav_tanul" href="#nav-3">Tanulmányai elvei</a></li>
+                    <li class="nav_p"><a href="#jatek">Játékelmélete</a></li>
+                    <li class="nav_p"><a href="#von">Von Neumann-architektúra</a></li>
+                    <li class="nav_p"><a href="#elv">Neumann-elvek</a></li>
+                    <li class="nav_p"><a href="#prog">Programozható számítógépek</a></li>
+                    <li class="nav_p"><a href="#rend">Összefésülő rendezés</a></li>
+                    <li class="nav_p"><a href="#lin">Lineáris programozás</a></li>
+                <li class="nav_a"><a id="nav_iskolank" href="#nav-4">Az iskolánk változásai</a></li>
+                    <li class="nav_p"><a href="#gonda">Gonda Zsombor</a></li>
+            -->
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div>
+            <h2 id="nav-1">Macska biológia</h2>
+                <p>A macska másnéven házi macska egy kisebb termetű húsevő emlős amit az emberek körülbelül 4000 éve háziasítottak Egyiptomban. Latin neve <b><i>Felis silvestris catus</i></b></p>
             <h2>Rokonok</h2>
             <div class="row">
                 <div class="col">
@@ -23,7 +89,6 @@
                             <li>puma</li>
                             <li>hiúz</li>
                         </ul>
-                        <img src="img/pusztai macska.jpeg" alt="pusztai macska">
                 </div>
                 <div class="col">
                     <h3>Távolabbi rokonok</h3>
@@ -33,7 +98,6 @@
                             <li>karakál</li>
                             <li>szervál</li>
                         </ul>
-                        <img src="img/afrikai aranymacska.jpg" alt="afrikai aranymacska">
                 </div>
                 <div class="col">
                     <h3>Már kihalt rokonok</h3>
@@ -43,7 +107,6 @@
                             <li>Acinonyx kurteni</li>
                             <li>Acinonyx pardinensis</li>
                         </ul>
-                        <img src="img/Acinonyx aicha.jpg" alt="Acinonyx aicha">
                 </div>
                 <div class="col">
                     <h3>Macskaalkatú rokonok</h3>
@@ -53,24 +116,25 @@
                             <li>hiénafélék</li>
                             <li>mongúzfélék</li>
                         </ul>
-                        <img src="img/cibetmacskafélék.jpg" alt="cibetmacskafélék">
                 </div>
             </div>
         <div>
-            <h2>A Saját macskám</h2>
-            <p> A macskám neve Kapi. Kapi egy 2 éves Kétszínű Van-mintás Európai rövidszőrű. A testvérem kapta miután már egy ideje kérte édesanyámtól, hogy vegyünk egy macskát. Legtöbbször a nappaliban szeret lenni vagy a testvérem szobájában, de van hogy más szobákba is be akar menni, és hogyha a szoba ajtaja be van csukva, akkor megpróbál felugrani a kilincsre és úgy kinyitni azt.</p>
+            <h2 id="nav-2">A Saját macskám</h2>
+                <p> A macskám neve Kapi. Kapi egy 2 éves Kétszínű Van-mintás Európai rövidszőrű. A testvérem kapta miután már egy ideje kérte édesanyámtól, hogy vegyünk egy macskát. Legtöbbször a nappaliban szeret lenni vagy a testvérem szobájában, de van hogy más szobákba is be akar menni, és hogyha a szoba ajtaja be van csukva, akkor megpróbál felugrani a kilincsre és úgy kinyitni azt.</p>
             <h2>Macskatartás Európai rövidszőrű esetén</h2>
             <h3>Tulajdonságok</h3>
-            <p>Ahogy a nevük is sugallja, ez a macskafajta rövid szőrzettel rendelkezik, ami könnyen kezelhető és ápolható, azaz nem igényel intenzív szőrzetápolást. Az európai rövidszőrű macskák közepes méretűek és izmosak. A testük általában közepesen hosszú és hajlékony. E macskák rendszerint mandula alakú szemekkel rendelkeznek, amelyek lehetnek különböző színekben, például zöld, sárga vagy kék. Hűségesek és ragaszkodóak a gazdájukhoz. Játékosak és érdeklődők, így szívesen részt vesznek az otthoni tevékenységekben, amikben ők vannak a figyelem központjában. Intelligens macskafajtaként ismertek, amelyek könnyen taníthatók és gyorsan megtanulhatják az alapvető trükköket és feladatokat. Szeretik az emberi társaságot és a családi életet. Fontos nekik az interakció és a kapcsolat a gazdájukkal. Általában egészséges állatok, de mint minden macskafajta esetében, az egészségük megőrzése érdekében rendszeres állatorvosi ellátásra van szükségük.</p>
+                <p>Ahogy a nevük is sugallja, ez a macskafajta rövid szőrzettel rendelkezik, ami könnyen kezelhető és ápolható, azaz nem igényel intenzív szőrzetápolást. Az európai rövidszőrű macskák közepes méretűek és izmosak. A testük általában közepesen hosszú és hajlékony. E macskák rendszerint mandula alakú szemekkel rendelkeznek, amelyek lehetnek különböző színekben, például zöld, sárga vagy kék. Hűségesek és ragaszkodóak a gazdájukhoz. Játékosak és érdeklődők, így szívesen részt vesznek az otthoni tevékenységekben, amikben ők vannak a figyelem központjában. Intelligens macskafajtaként ismertek, amelyek könnyen taníthatók és gyorsan megtanulhatják az alapvető trükköket és feladatokat. Szeretik az emberi társaságot és a családi életet. Fontos nekik az interakció és a kapcsolat a gazdájukkal. Általában egészséges állatok, de mint minden macskafajta esetében, az egészségük megőrzése érdekében rendszeres állatorvosi ellátásra van szükségük.</p>
             <h3>Etetés</h3>
-            <p>Az elsődleges étkezési forrásuknak minőségi macskaeledelnek kell lennie. Olyan eledelt kell választani, amely kifejezetten macskák számára készült, és tartalmazza az összes szükséges tápanyagot, például fehérjét, zsírt, szénhidrátot, vitaminokat és ásványi anyagokat. Mindig biztosítani kell friss ivóvizet számukra. A hidratáltság fontos az egészségük szempontjából, és a macskák hajlamosak a vizeletkők kialakulására, ha nem isznak elég folyadékot. Az ételadagolást pontosan kell követni az elérhető csomagoláson található irányelvek alapján. Az adagokat a macska korához, súlyához és aktivitási szintjéhez kell igazítani. Az elhízás elkerülése érdekében ne szabad túletetni őket. </p>
+                <p>Az elsődleges étkezési forrásuknak minőségi macskaeledelnek kell lennie. Olyan eledelt kell választani, amely kifejezetten macskák számára készült, és tartalmazza az összes szükséges tápanyagot, például fehérjét, zsírt, szénhidrátot, vitaminokat és ásványi anyagokat. Mindig biztosítani kell friss ivóvizet számukra. A hidratáltság fontos az egészségük szempontjából, és a macskák hajlamosak a vizeletkők kialakulására, ha nem isznak elég folyadékot. Az ételadagolást pontosan kell követni az elérhető csomagoláson található irányelvek alapján. Az adagokat a macska korához, súlyához és aktivitási szintjéhez kell igazítani. Az elhízás elkerülése érdekében ne szabad túletetni őket. </p>
             <h3>Tisztántartás</h3>
-            <p>Az Átlagos macskának nincs szüksége fürdetésre. A legtöbb macska nem szeret vízben állni vagy elázni, ezért egy jó ok nélkül nem szabad macskát fürdetni. A macskákat kor vagy egészségügyi okok esetén szabad megmosni</p>
+                <p>Az Átlagos macskának nincs szüksége fürdetésre. A legtöbb macska nem szeret vízben állni vagy elázni, ezért egy jó ok nélkül nem szabad macskát fürdetni. A macskákat kor vagy egészségügyi okok esetén szabad megmosni</p>
             <h3>Nevelés</h3>
-            <p>Az európai rövidszőrű macska kölyök koránban elkezdhetik a szocializálást. Fontos, hogy már fiatalon hozzászokjanak más emberekhez, helyzetekhez és más állatokhoz. Ez segít abban, hogy kiegyensúlyozott és kezelhető felnőtt macska váljon belőlük. Fontos azonban megelőzni az olyan viselkedési problémákat, mint például az alomtálcán kívüli ürítés. Ehhez rendszeresen tisztítani kell az alomtálcát, és biztosítani kell, hogy a macska mindig könnyen hozzáférhessen. Az európai rövidszőrű macskák nagyon játékosak, és fontos, hogy biztosítva legyenek nekik a megfelelő játékok és szórakozási lehetőségek. Játékos tevékenységekkel le lehet foglalni a figyelmüket, és meg lehet akadályozni a káros romboló viselkedést. A macskák saját egyedi személyiségükkel rendelkeznek, és a nevelés folyamata időbe telhet ezért fontos a türelem és a kitartás. Nem szabad elfelejteni, hogy a pozitív megerősítés hatékonyabb, mint a büntetés.</p>
+                <p>Az európai rövidszőrű macska kölyök koránban elkezdhetik a szocializálást. Fontos, hogy már fiatalon hozzászokjanak más emberekhez, helyzetekhez és más állatokhoz. Ez segít abban, hogy kiegyensúlyozott és kezelhető felnőtt macska váljon belőlük. Fontos azonban megelőzni az olyan viselkedési problémákat, mint például az alomtálcán kívüli ürítés. Ehhez rendszeresen tisztítani kell az alomtálcát, és biztosítani kell, hogy a macska mindig könnyen hozzáférhessen. Az európai rövidszőrű macskák nagyon játékosak, és fontos, hogy biztosítva legyenek nekik a megfelelő játékok és szórakozási lehetőségek. Játékos tevékenységekkel le lehet foglalni a figyelmüket, és meg lehet akadályozni a káros romboló viselkedést. A macskák saját egyedi személyiségükkel rendelkeznek, és a nevelés folyamata időbe telhet ezért fontos a türelem és a kitartás. Nem szabad elfelejteni, hogy a pozitív megerősítés hatékonyabb, mint a büntetés.</p>
             <h3>Tartási Körülmények</h3>
-            <p>Az európai rövidszőrű macskák beltéri és kültéri tartásra is alkalmasak lehetnek. A kültéri tartás esetén biztosítani kell számukra egy biztonságos udvart vagy kerített területet, hogy megvédhesd őket a veszélyektől legyen az közúti fogrgalom vagy állatok közötti konfliktus. Az európai rövidszőrű macskák hűségesek, de ugyanakkor szeretnek időt magukra is szánni. Biztosítani kell számukra egy olyan helyet, ahol elvonulhatnak, ha pihenni vagy játszani szeretnének. Ügyelni kell a macska biztonságára az otthonban is. Elrejtett veszélyek lehetnek, mint például mérges növények vagy veszélyes vegyszerek, amelyeket el kell zárni a macskák elől.</p>
+                <p>Az európai rövidszőrű macskák beltéri és kültéri tartásra is alkalmasak lehetnek. A kültéri tartás esetén biztosítani kell számukra egy biztonságos udvart vagy kerített területet, hogy megvédhesd őket a veszélyektől legyen az közúti fogrgalom vagy állatok közötti konfliktus. Az európai rövidszőrű macskák hűségesek, de ugyanakkor szeretnek időt magukra is szánni. Biztosítani kell számukra egy olyan helyet, ahol elvonulhatnak, ha pihenni vagy játszani szeretnének. Ügyelni kell a macska biztonságára az otthonban is. Elrejtett veszélyek lehetnek, mint például mérges növények vagy veszélyes vegyszerek, amelyeket el kell zárni a macskák elől.</p>
         </div>
     </main>
+<!--JS-->
+    <script src="../../General/anims.js"></script>
 </body>
 </html>
