@@ -2,16 +2,82 @@
 <html lang="hun">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">">
-    <link href="style.css" rel="stylesheet">
-     <title>Kutyák</title>
+<!--Icon-->
+    <link rel="icon" type="image/x-icon" href="../../General/img/dog_icon.png">
+<!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<!--ScrollOut-->
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+<!--Spitting-->
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+<!--CSS-->
+    <link rel="stylesheet" href="../../General/general.css">
+    <link rel="stylesheet" href="../../General/glitch.css">
+    <link rel="stylesheet" href="../../General/glitch_2.0.css">
+    <link rel="stylesheet" href="../../General/anims.css">
+    <link rel="stylesheet" href="../../General/footer.css">
+    <link rel="stylesheet" href="../../General/nav.css">
+<!--Hamburger CSS-->
+    <link rel="stylesheet" href="../../Hamburger/ham_left.css">
+<!--Own CSS-->
+    <link rel="stylesheet" href="../emberek.css">
+    <link rel="stylesheet" href="patrik.css">
+<!--Font family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!--font-family: 'Caveat', cursive;-->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+        <!--font-family: 'Barlow', sans-serif;-->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200&display=swap" rel="stylesheet">
+        <!--font-family: 'Nova Mono', monospace;-->
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
+        <!--font-family: 'Kalam', cursive;-->
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
+
+    <title>Kutyák</title>
 </head>
 <body>
-    <main>
+    <div class="hamToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+            <ul class="ham">
+                <a href="../../Menu/menu.html">
+                    <li><img class="ham_img" src="../../Hamburger/img/back.png" alt=""></li>
+                </a>
+                <a  href="https://github.com/Endrreman/2.0_IKT_1" target="_blank">
+                    <li><img class="ham_img" src="../../Hamburger/img/github.png" alt=""></li>
+                </a>
+                <a href="">
+                    <li><img class="ham_img" src="../../Hamburger/img/google-drive.png" alt=""></li>
+                </a>
+            </ul>
+    </div>
+    <header>
         <h1>Kutyák</h1>
+    </header>
+    <nav>
         <div>
-            <h2>Kutya biológia</h2>
+            <ul>
+                <li class="nav_a"><a id="nav_bio" href="#nav-1">Kutya biológia</a></li>
+                <li class="nav_a"><a id="nav_sajat" href="#nav-2">A saját kutyám</a></li>
+                <li class="nav_a"><a id="nav_tanul" href="#nav-3">Kutyatartás</a></li>
+                    <li class="nav_p"><a href="#tulaj">Tulajdonságok</a></li>
+                    <li class="nav_p"><a href="#etet">Etetés</a></li>
+                    <li class="nav_p"><a href="#tiszt">Tisztántartás</a></li>
+                    <li class="nav_p"><a href="#neveles">Nevelés</a></li>
+                    <li class="nav_p"><a href="#tart">Tartási Körülmények</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="main">
+            <h2 id="nav-1">Kutya biológia</h2>
             <p>A kutya másnéven eb egy emlős ragadozó amit az emberek farkasokból háziasítottak. Latin neve <b>Canis lupus familiaris</b> az egyetlen emlős aki megkapta a <i>familiaris</i> jelzőt ami családhoz tartozót jelent.</p>
             <h2>Rokonok</h2>
             <div class="row">
@@ -23,7 +89,6 @@
                             <li>arany sakál</li>
                             <li>dingó</li>
                         </ul>
-                        <img src="img/graywolf.jpg" alt="szürkefarkas">
                 </div>
                 <div class="col">
                     <h3>Távolabbi rokonok</h3>
@@ -33,7 +98,6 @@
                             <li>nyestkutya</li>
                             <li>közönséges pamparóka</li>
                         </ul>
-                        <img src="img/fox.jpg" alt="vörösróka">
                 </div>
                 <div class="col">
                     <h3>Már kihalt rokonok</h3>
@@ -43,7 +107,6 @@
                             <li>Medvekutya (Amphicyon major)</li>
                             <li>Borophagus diversidens</li>
                         </ul>
-                        <img src="img/bigwolf.jpg" alt="Óriás farkas">
                 </div>
                 <div class="col">
                     <h3>Kutyaalkatú rokonok</h3>
@@ -53,24 +116,68 @@
                             <li>Rozmárfélék</li>
                             <li>Menyétszabásúak</li>
                         </ul>
-                        <img src="img/kutyalk.jpg" alt="Kutyaalkatúak">
                 </div>
             </div>
-        <div>
-            <h2>Saját kutya</h2>
+
+            <h2 id="nav-2">Saját kutya</h2>
             <p> Nekem is van egy kutyám. Daisynek hívják és ő egy Golden Retrivier. Lassan 8 éves. Édesanyám kapta szülinapjára az idősebi kutyánk mellé. Azóta átvette az idősebbik szerepet és a fiatalabbik kutyánkal Danteval élnek nálunk.</p>
-            <h2>Kutyatartás Golden Retrivier esetén</h2>
-            <h3>Tulajdonságok</h3>
+            <h2 id="nav-3">Kutyatartás Golden Retrivier esetén</h2>
+            <h3 id="tulaj">Tulajdonságok</h3>
             <p>A Golden retrivier egy nagydarab de barátságos fajta ezért kiváló családoknak. Okos gyorsan tanul. Mozgásigénye magas ezért naponta ajánlott elvinni legalább egyszer sétálni. Ha nem foglalkazunk velük könnyen problémák lehetnek az étvágyukkal mivel nagyon ragaszkodnak gazdájukhoz. Nem kötelezően társas lények de ha nincs túk sok időnk amit rá tudunk áldozni minden nap lehet jó ötlet egy társat beszerezni. Mivel ennyire barátságosak a Golden Retriverek nem a legjobb házvédők. Persze ez tanítástól függ. Átlagosan 10-12 évig élnek a Golden Retrivierek de a régebbi kutyánk 16 évig élt szóval megeshet bármi.</p>
-            <h3>Etetés</h3>
+            <h3 id="etet">Etetés</h3>
             <p>Mint minden kutya első sorban a Golden retriverek is húst esznek de manapság a legtöbben táppal etetik a kutyájuk.Az én esetemben Daisy kifejezeten finnyás a száraz tápra ezért leves kockát szoktunk megcsinálni és a száraz táphoz önteni.</p>
-            <h3>Tisztántartás</h3>
+            <h3 id="tiszt">Tisztántartás</h3>
             <p>Ha nagyon akarjuk megpróbálhatjuk megfürdetni de egyszerűbb ha jó idővan engedi valami gyerek medencébe vizet. A Golden retriverek imádják a vizet. Daisy egész nyáron a medencéjébe járkált.</p>
-            <h3>Nevelés</h3>
+            <h3 id="nevel">Nevelés</h3>
             <p>A Golden retriver egy nagyon okos kutya. Egyszerűen tanítható főleg ha elkezdjük amikor még fiatal. De Daisy a legjobb példa arra hogy egy idősebb kutya és tanítható. Nem rég tanulta meg a "Pitizz!" és a "Fekszik" utasításokat.</p>
-            <h3>Tartási Körülmények</h3>
+            <h3 id="tart">Tartási Körülmények</h3>
             <p>A nagy mozgás igénye miatt ajánlott akkor tartani ha van egy kert/udvar ahol tud rohangálni. Nem helyetessíti a sétát de ha nincs minden nap időd sétálni vele akkor jó kiegészítés lehet. Fenntartani nem kifejezeten drága. Nem drágább mint bármilyen átlag háziállat. Persze az étel illetve az oltások pénzbe kerülnek de ez minden állattal így van.</p>
         </div>
     </main>
+    <footer>
+        <div class="row row-cols-1 row-cols-lg-2  text-center text-lg-start">
+            <div class="col">
+                <div class="glitch tutels_glitch" onclick="location.href='https://youtu.be/dQw4w9WgXcQ'">
+                    <div class="line">The Monarch<sup style="font-size: 2rem;">©</sup></div>
+                    <div class="line">The Monarch<sup style="font-size: 2rem;">©</sup></div>
+                    <div class="line">The Monarch<sup style="font-size: 2rem;">©</sup></div>
+                    <div class="line">The Monarch<sup style="font-size: 2rem;">©</sup></div>
+                    <div class="line">The Monarch<sup style="font-size: 2rem;">©</sup></div>
+                    <div class="line">The Monarch<sup style="font-size: 2rem;">©</sup></div>
+                    <div class="line">The Monarch<sup style="font-size: 2rem;">©</sup></div>
+                    <div class="line">The Monarch<sup style="font-size: 2rem;">©</sup></div>
+                    <div class="line">The Monarch<sup style="font-size: 2rem;">©</sup></div>
+                </div>
+                <h3><a href="../../Menu/menu.html">Főoldal</a></h3>
+            </div>
+            <div class="col">
+                <div class="row row-cols-1 row-cols-lg-3">
+                    <div class="col">
+                        <h3>Nagy Endre</h3>
+                        <h4><a href="">Bella</a></h4>
+                        <p onclick="location.href='https://imgflip.com/i/81glxo'">CSS</p>
+                        <a href="https://www.facebook.com/endre.nagy.35728" target="_blank"><img class="feet_pick" src="../../General/img/facebook.png" alt="Facebook"></a>
+                        <a href="https://www.instagram.com/nagy.__.endre/" target="_blank"><img class="feet_pick" src="../../General/img/instagram_logo.png" alt="Instagram"></a>
+                        <a href=""><img class="feet_pick x" src="../../General/img/x.jpg" alt=""></a>
+                        <a href=""><img class="feet_pick" src="../../General/img/gmail.png" alt=""></a>
+                    </div>
+                    <div  class="col">
+                        <h3>Fekete Patrik</h3>
+                        <h4><a href="">Daisy</a></h4>
+                        <p>HTML</p>
+                        <a href="https://www.instagram.com/nake_rics/"><img class="feet_pick" src="../../General/img/instagram_logo.png" alt="Instagram"></a>
+                    </div>
+                    <div class="col">
+                        <h3>Kiss Péter</h3>
+                        <h4><a href="../Ficli/catto.html">Kapi</a></h4>
+                        <p>HTML</p>
+                        <a href=""><img class="feet_pick" src="../../General/img/instagram_logo.png" alt="Instagram"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!--JS-->
+    <script src="../../General/anims.js"></script>
 </body>
 </html>

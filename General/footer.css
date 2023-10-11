@@ -1,6 +1,7 @@
 footer{
     min-height: 30vh;           /*Placeholder*/
-    background-color: #271300;
+    width: 100%;
+    background-color: #2e1600;
 }
 footer .row{
     width: 100%;
