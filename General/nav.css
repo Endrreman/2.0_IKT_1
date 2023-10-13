@@ -15,7 +15,8 @@ nav > div{
 /*      Nav text*/
 nav ul{
     list-style: none;
-
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 nav li{
     margin-bottom: .5rem;
