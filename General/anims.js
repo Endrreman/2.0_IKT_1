@@ -1,6 +1,18 @@
 //!         General
 Splitting();
 
+//      text
+ScrollOut({
+    targets: '.char',
+    onShown(el) {
+        el.classList.add("enter_anim");
+    },
+    onHidden(el) {
+        el.classList.remove("enter_anim");
+    },
+    threshold: 0.99999,
+});
+
 //!         Nav
 
 //*     neu_120

@@ -1,3 +1,17 @@
+/*!       General       */
+/*   text   */
+.animated_enter .char{
+    margin-left: 0.5rem;
+    opacity: .3;
+
+    transition: all 0.2s calc(var(--char-index) * 0.02s);
+}
+.animated_enter .enter_anim{
+    margin-left: 0;
+    opacity: 1;
+}
+
+
 .main_row > .col{
     transition: flex .9s 0s ease-in-out;     /*felx ki*/  /*nem leht késleltetés bug(összecsúszás) miatt*/
 }
