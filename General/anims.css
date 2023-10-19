@@ -32,3 +32,39 @@
 .main_row > .col:hover .col_img {
     transition: all 0.5s 0.5s;      /*img be*/
 }
+
+
+/*!       Menu       */
+
+@keyframes up-down {
+    0% {
+        transform: translateY(-40%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes back-front {
+    0% {
+        scale: 90%;
+        opacity: 0;
+    }
+    20%{
+        scale: 90%;
+        opacity: 0;
+    }
+    100% {
+        scale: 100%;
+        opacity: 1;
+    }
+}
+
+.h1_load-in{
+    animation: up-down .5s ease;
+}
+
+.main_load-in{
+    animation: back-front 1s ease;
+}

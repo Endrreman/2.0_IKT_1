@@ -15,7 +15,7 @@ ScrollOut({
 
 //!         Nav
 
-//*     neu_120
+//*     emberek
 var bio = document.getElementById("nav_bio");
 var iskola = document.getElementById("nav_sajat");
 var tanul = document.getElementById("nav_tanul");
