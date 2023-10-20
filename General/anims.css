@@ -1,15 +1,5 @@
 /*!       General       */
-/*   text   */
-.animated_enter .char{
-    margin-left: 0.5rem;
-    opacity: .3;
 
-    transition: all 0.2s calc(var(--char-index) * 0.02s);
-}
-.animated_enter .enter_anim{
-    margin-left: 0;
-    opacity: 1;
-}
 
 
 .main_row > .col{
@@ -62,9 +52,30 @@
 }
 
 .h1_load-in{
-    animation: up-down .5s ease;
+    animation: up-down 1s ease;
+}
+.main_load-in{
+    animation: back-front 1.5s ease;
 }
 
-.main_load-in{
-    animation: back-front 1s ease;
+/*!       Emberek       */
+@keyframes left-right {
+    0% {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    20% {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+header > h1{
+    animation: up-down 1s ease;
+}
+nav > div{
+    animation: left-right 1.5s ease;
 }

@@ -23,6 +23,7 @@ main{
 main h2, h3{
     font-family: 'Kalam', cursive;
     font-weight: bold;
+    margin-top: 2rem;
 }
 main h3{
     text-indent: .5rem;
@@ -31,7 +32,6 @@ main h3{
 main p{
     text-indent: .5rem;
     margin-left: 1rem;
-    margin-bottom: 2rem;
     text-align: justify;
 }
 i{

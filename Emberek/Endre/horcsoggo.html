@@ -1,68 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Icon-->
+    <link rel="icon" type="image/x-icon" href="../../General/img/dog_icon.png">
+<!--Bootstrap-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<!--Spitting-->
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css">
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css">
+<!--CSS-->
+    <link rel="stylesheet" href="../../General/general.css">
+    <link rel="stylesheet" href="../../General/glitch.css">
+    <link rel="stylesheet" href="../../General/glitch_2.0.css">
+    <link rel="stylesheet" href="../../General/anims.css">
+    <link rel="stylesheet" href="../../General/footer.css">
+    <link rel="stylesheet" href="../../General/nav.css">
+<!--Hamburger CSS-->
+    <link rel="stylesheet" href="../../Hamburger/ham_left.css">
+<!--Own CSS-->
+    <link rel="stylesheet" href="../emberek.css">
+    <link rel="stylesheet" href="endre.css">
+<!--Font family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!--font-family: 'Caveat', cursive;-->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+        <!--font-family: 'Barlow', sans-serif;-->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200&display=swap" rel="stylesheet">
+        <!--font-family: 'Nova Mono', monospace;-->
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
+        <!--font-family: 'Kalam', cursive;-->
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
+
     <title>Hörcsögök</title>
 </head>
-    <body>
-        <header>
-            Hörcsögök
-        </header>
-        <main>
-            <div>
-                <h2>Hörcsögök</h2>
-                <p>A hörcsögök rágcsálók a <i>Cricetinae</i> családból. Az elmúlt időbe megszilárdult a helyzetük mint kisméretű.</p> 
-                <p>A leghíresebb hörcsög faj az arany/szíriai hörcsög. Ezt tartják a legtöbben mint háziállat. Még 3 törpehörcsögöt tartanak mint házíállat általában a Cambell-hörcsög, a Dzsungáriai törpehörcsög és a Roborovszki törpehörcsög.</p>
-                <p>A hörcsögök inkább az alkonyatban aktívak mint éjszaka. A vadonban a nappalokat földalatt töltik hogy elkerüljék az állatokat akik vadásznak rájuk. A főétkük magok gyülmölcsök és egyéb gazok de néha napján a földben megbújó bogarakat is megeszik. Az egyik legismertebb jellegzetességük a nagy pofazacskújuk amit étel hordására használnak.</p>
-                <h2>Rokonok</h2>
-                <div class="row">
-                    <div class="col">
-                        <h3>Közeli rokonok</h3>
-                            <ul>
-                                <li>Szíriai aranyhörcsög</li>
-                                <li>Dzsungáriai törpehörcsög</li>
-                                <li>Kínai csíkos törpehörcsög</li>
-                                <li>Mezei hörcsög</li>
-                            </ul>
-                    </div>
-                    <div class="col">
-                        <h3>Távolabbi rokonok</h3>
-                            <ul>
-                                <li>Közönséges kószapocok</li>
-                                <li>Havasi pocok</li>
-                                <li>sörényes patkány</li>
-                                <li>Amerikai egér</li>
-                            </ul>
-                    </div>
-                    <div class="col">
-                        <h3>Veszélyeztetett/kihalt hörcsögök</h3>
-                            <ul>
-                                <li>Trágyagombapatkány (szabadfordítás)(Oryzomys antilarum)  </li>
-                                <li>Megalomys</li>
-                                <li>Cricetus</li>
-                                <li>Eúrópai hörcsög</li>
-                            </ul>
-                    </div>
-                    <div class="col">
-                        <h3>Rágcsáló rokonok</h3>
-                            <ul>
-                                <li>Hódalkatúak</li>
-                                <li>Sülalkatúak</li>
-                                <li>Egéralkatúak</li>
-                                <li>Mókusalakatúak</li>
-                            </ul>
-                    </div>
+<body>
+    <div class="hamToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+            <ul class="ham">
+                <li><a href="../../Menu/menu.html"><img class="ham_img" src="../../Hamburger/img/back.png" alt=""></a></li>
+                <li><a  href="https://github.com/Endrreman/2.0_IKT_1" target="_blank"><img class="ham_img" src="../../Hamburger/img/github.png" alt=""></a></li>
+                <li><a href=""><img class="ham_img" src="../../Hamburger/img/google-drive.png" alt=""></a></li>
+            </ul>
+    </div>
+    <header>
+        <h1>Hörcsögök</h1>
+    </header>
+    <nav  class="d-none d-lg-block">
+        <div>
+            <ul>
+                <li class="nav_a"><a id="nav_bio" href="#nav-1">Macska biológia</a></li>
+                <li class="nav_a"><a id="nav_sajat" href="#nav-2">A saját macskám</a></li>
+                <li class="nav_a"><a id="nav_tanul" href="#nav-3">Macskatartás</a></li>
+                    <li class="nav_p"><a href="#tulaj">Tulajdonságok</a></li>
+                    <li class="nav_p"><a href="#etet">Etetés</a></li>
+                    <li class="nav_p"><a href="#tiszt">Tisztántartás</a></li>
+                    <li class="nav_p"><a href="#neveles">Nevelés</a></li>
+                    <li class="nav_p"><a href="#tart">Tartási Körülmények</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="main">
+            <h2>Hörcsögök</h2>
+            <p>A hörcsögök rágcsálók a <i>Cricetinae</i> családból. Az elmúlt időbe megszilárdult a helyzetük mint kisméretű.</p> 
+            <p>A leghíresebb hörcsög faj az arany/szíriai hörcsög. Ezt tartják a legtöbben mint háziállat. Még 3 törpehörcsögöt tartanak mint házíállat általában a Cambell-hörcsög, a Dzsungáriai törpehörcsög és a Roborovszki törpehörcsög.</p>
+            <p>A hörcsögök inkább az alkonyatban aktívak mint éjszaka. A vadonban a nappalokat földalatt töltik hogy elkerüljék az állatokat akik vadásznak rájuk. A főétkük magok gyülmölcsök és egyéb gazok de néha napján a földben megbújó bogarakat is megeszik. Az egyik legismertebb jellegzetességük a nagy pofazacskújuk amit étel hordására használnak.</p>
+            <h2>Rokonok</h2>
+            <div class="row">
+                <div class="col">
+                    <h3>Közeli rokonok</h3>
+                        <ul>
+                            <li>Szíriai aranyhörcsög</li>
+                            <li>Dzsungáriai törpehörcsög</li>
+                            <li>Kínai csíkos törpehörcsög</li>
+                            <li>Mezei hörcsög</li>
+                        </ul>
                 </div>
-                <h2 id="nav-3">Hörcsögtartás</h2>
-                <p>Egyre gyakoribb háziállatok. A hörcsögök nem élnek a legtovább szóval 2-3 év boldogítás után valószínűleg megkell válnunk tőlük. Fontos amikor hörcsögöt veszünk figyeljünk hogy nem-e rendelkezik betegséggel mivel egyre gyakoribb a túltenyésztés okoszta betegség. A ketrecét hetente kétszer ajánlott takarítani. A ketrec főleg a törpehörcsögünk van kicsi lyukakkal kell rendelkeznie mivel a hörcsög kis helyen is átférnek. Egy ketrecbe egy hörcsög mivel nem ritka dolog hogy összeverekednek a hörcsögök. A ketrec aljába fűrészpor vagy forgács kerüljön. Ajánlott valami ágynak való anyagot is bedobni a ketrecbe erre az egyik legjobb példa a puha papír. Bármennyire aranyos nem ajánlatos hirtelen felkapni mivel esetenként megharaphat. Ha kiengeded a hörcsögöt ügyelj arra hogy ne tudjon semmi olyan alá/be mászni ahonnan nem tud kijutni.</p>
-                <h3 id="tulaj">Tulajdonságok</h3>
-                <p>A hörcsögök tömzsi testű rövid farkú állatok. Kicsi szörmés fülük van és rövid tömzsi lábaik eléggé széles lábfejjel. Vastag selymes szörük van ami lehet hosszú vagy rövid és sok színben megtalálható mint fekete szürke mézsárga fehér barna vagy ezek keveréke is lehet. A legnagyobb az Európai hörcsög.</p>
-                <h3 id="etet">Etetés</h3>
-                <p>A hörcsögök mindenevők a vadonban főleg magvakkal vagy fűvel táplálkoznak. Túltudják élni csak a boltokban kapható hörcsög kajával ajánlott néha gyümölcsökkel és zöldségekkel kiegésziteni étkük hogy egészségesebbek legyenek. Ajánlott olyan gyümölcsöket adni amik nem tartalmaznak citrust és olyan zöldségeket amik nagy zöld levelekből állnak. Nem szabad őket csokoládéval hagymával vagy bármilyen nagyon sós/édes kajával eteteni. A hörcsögök imádják a mogyoróvajat de fontos hogy ne adjunk nekik sokat mivel beleragadhat a pofazacskójukba,</p>
-                <h3>Érzékeik</h3>
-                <p>A hörcsögöknek borzalmas látásuk van. Rövidlátók és színvakok. A látásuk miatt fogalmuk sincs hol vannnak legtöbb helyzetben de ez nem állítja meg őket hogy random elbarangoljanak. Mindig tudják ha mozog valami körölüttük. A vadonban a predátorok elkerülésére hasznos házban a gazda érkezését tudják ezzel megmondani. A hörcsögök rendelkeznek egy szagképző szervel amivel területet jelőlnek meg illetve megtudják egymást keresni. Érzékenyek az magas hangok. Megtudnak tanulni hangokat mint példájul a kajájuk vagy a gazdájuk hangját. </p>
+                <div class="col">
+                    <h3>Távolabbi rokonok</h3>
+                        <ul>
+                            <li>Közönséges kószapocok</li>
+                            <li>Havasi pocok</li>
+                            <li>sörényes patkány</li>
+                            <li>Amerikai egér</li>
+                        </ul>
+                </div>
+                <div class="col">
+                    <h3>Veszélyeztetett/kihalt hörcsögök</h3>
+                        <ul>
+                            <li>Trágyagombapatkány (szabadfordítás)(Oryzomys antilarum)  </li>
+                            <li>Megalomys</li>
+                            <li>Cricetus</li>
+                            <li>Eúrópai hörcsög</li>
+                        </ul>
+                </div>
+                <div class="col">
+                    <h3>Rágcsáló rokonok</h3>
+                        <ul>
+                            <li>Hódalkatúak</li>
+                            <li>Sülalkatúak</li>
+                            <li>Egéralkatúak</li>
+                            <li>Mókusalakatúak</li>
+                        </ul>
+                </div>
             </div>
-        </main>
-    </body>
+            <h2 id="nav-3">Hörcsögtartás</h2>
+            <p>Egyre gyakoribb háziállatok. A hörcsögök nem élnek a legtovább szóval 2-3 év boldogítás után valószínűleg megkell válnunk tőlük. Fontos amikor hörcsögöt veszünk figyeljünk hogy nem-e rendelkezik betegséggel mivel egyre gyakoribb a túltenyésztés okoszta betegség. A ketrecét hetente kétszer ajánlott takarítani. A ketrec főleg a törpehörcsögünk van kicsi lyukakkal kell rendelkeznie mivel a hörcsög kis helyen is átférnek. Egy ketrecbe egy hörcsög mivel nem ritka dolog hogy összeverekednek a hörcsögök. A ketrec aljába fűrészpor vagy forgács kerüljön. Ajánlott valami ágynak való anyagot is bedobni a ketrecbe erre az egyik legjobb példa a puha papír. Bármennyire aranyos nem ajánlatos hirtelen felkapni mivel esetenként megharaphat. Ha kiengeded a hörcsögöt ügyelj arra hogy ne tudjon semmi olyan alá/be mászni ahonnan nem tud kijutni.</p>
+            <h3 id="tulaj">Tulajdonságok</h3>
+            <p>A hörcsögök tömzsi testű rövid farkú állatok. Kicsi szörmés fülük van és rövid tömzsi lábaik eléggé széles lábfejjel. Vastag selymes szörük van ami lehet hosszú vagy rövid és sok színben megtalálható mint fekete szürke mézsárga fehér barna vagy ezek keveréke is lehet. A legnagyobb az Európai hörcsög.</p>
+            <h3 id="etet">Etetés</h3>
+            <p>A hörcsögök mindenevők a vadonban főleg magvakkal vagy fűvel táplálkoznak. Túltudják élni csak a boltokban kapható hörcsög kajával ajánlott néha gyümölcsökkel és zöldségekkel kiegésziteni étkük hogy egészségesebbek legyenek. Ajánlott olyan gyümölcsöket adni amik nem tartalmaznak citrust és olyan zöldségeket amik nagy zöld levelekből állnak. Nem szabad őket csokoládéval hagymával vagy bármilyen nagyon sós/édes kajával eteteni. A hörcsögök imádják a mogyoróvajat de fontos hogy ne adjunk nekik sokat mivel beleragadhat a pofazacskójukba,</p>
+            <h3>Érzékeik</h3>
+            <p>A hörcsögöknek borzalmas látásuk van. Rövidlátók és színvakok. A látásuk miatt fogalmuk sincs hol vannnak legtöbb helyzetben de ez nem állítja meg őket hogy random elbarangoljanak. Mindig tudják ha mozog valami körölüttük. A vadonban a predátorok elkerülésére hasznos házban a gazda érkezését tudják ezzel megmondani. A hörcsögök rendelkeznek egy szagképző szervel amivel területet jelőlnek meg illetve megtudják egymást keresni. Érzékenyek az magas hangok. Megtudnak tanulni hangokat mint példájul a kajájuk vagy a gazdájuk hangját. </p>
+        </div>
+    </main>
+    <!--JS-->
+<!--ScrollOut-->
+<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+<!--Spitting-->
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+<!--Anim-->
+    <script src="../../General/anims.js"></script>
+</body>
 </html>
