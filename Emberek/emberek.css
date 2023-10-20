@@ -7,8 +7,14 @@ header h1{
 }
 /*!       Main       */
 main{
-    width: 85%;
+    width: 100%;
     float: left;
+}
+@media (min-width: 992px){
+    main{
+        width: 85%;
+        float: left;
+    }
 }
 .main{
     width: 90%;
@@ -26,6 +32,7 @@ main p{
     text-indent: .5rem;
     margin-left: 1rem;
     margin-bottom: 2rem;
+    text-align: justify;
 }
 i{
     color: #c09018;
@@ -33,13 +40,14 @@ i{
 main .row{
     width: 100%;
     margin-left: auto;
+    margin-inline: 0;
     margin-bottom: 2rem;
 }
 main .row .col{
     color: white;
     min-height: 20rem;
     transition: box-shadow .3s;
-    margin-inline: .2rem;
+    border: 2px solid rgb(255, 237, 224);
 }
 main .row .col:hover{
     box-shadow: inset 0 0 1000px 1000px rgb(0, 0, 0, .4);
