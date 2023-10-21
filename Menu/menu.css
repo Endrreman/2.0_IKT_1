@@ -102,12 +102,13 @@
     margin-inline: auto;
 }
 .main_row > .col h2{
+    margin: 1rem;
     font-family: 'Caveat', cursive;
     font-size: 3rem;
     text-align: center;
 }
 .main_row > .col p{
-    text-align: justify;
+
     color: white;
     border-radius: 3px;
     text-indent: 1rem;

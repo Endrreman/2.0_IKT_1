@@ -1,0 +1,12 @@
+main .row .col:nth-child(1) .img{
+  background: url(img/sziriaaranyhorcsog.jpg) no-repeat center center/cover;
+}
+main .row .col:nth-child(2) .img{
+  background: url(img/sorenyespatkany.jpg) no-repeat center center/cover;
+}
+main .row .col:nth-child(3) .img{
+  background: url(img/europaihorcsog.jpg) no-repeat center center/cover;
+}
+main .row .col:nth-child(4) .img{
+  background: url(img/rágccsalók.jpg) no-repeat center center/cover;
+}

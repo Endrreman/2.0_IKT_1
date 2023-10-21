@@ -29,7 +29,7 @@ main h3{
     text-indent: .5rem;
 }
 
-main > p{
+.main > p{
     text-indent: .5rem;
     margin-left: 1rem;
     text-align: justify;
@@ -45,7 +45,7 @@ main .row{
 main .row .col{
     color: white;
     min-height: 20rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 .card{
   background-color: #6f4e3d;
@@ -64,16 +64,6 @@ main .row .col{
 }
 .card p{
   font-family: 'Barlow', sans-serif;
-}
-
-hr{
-    width: 50%;
-    margin-inline: auto;
-    border: 3px solid rgb(112, 69, 34, .8);
-    border-radius: 4px;
-    opacity: 1;
-
-    transition: width 0.5s;
 }
 
 /*!       Footer       */
