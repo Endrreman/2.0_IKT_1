@@ -1,15 +1,20 @@
-main .row .col:nth-child(1){
+main .row .col:nth-child(1) .img{
     background: url(img/graywolf.jpg) no-repeat center center/cover;
 }
-main .row .col:nth-child(2){
+main .row .col:nth-child(2) .img{
     background: url(img/fox.jpg) no-repeat center center/cover;
 }
-main .row .col:nth-child(3){
+main .row .col:nth-child(3) .img{
     background: url(img/bigwolf.jpg) no-repeat center center/cover;
 }
-main .row .col:nth-child(4){
+main .row .col:nth-child(4) .img{
     background: url(img/kutyalk.jpg) no-repeat center center/cover;
 }
+
 tr td {
     border: 1px solid;
+}
+
+.fix_bg:nth-last-of-type(1) {
+    background-image: url(../../Menu/img/dog1.jpg);
 }

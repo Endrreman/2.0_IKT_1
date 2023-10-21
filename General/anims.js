@@ -1,20 +1,15 @@
 //!         General
-Splitting();
-
-//      text
 ScrollOut({
-    targets: '.char',
+    targets: "#hr_load",
     onShown(el) {
-        el.classList.add("enter_anim");
+        el.classList.add("hr_load");
     },
     onHidden(el) {
-        el.classList.remove("enter_anim");
-    },
-    threshold: 0.99999,
+        el.classList.remove("hr_load");
+    }
 });
 
 //!         Nav
-
 //*     emberek
 var bio = document.getElementById("nav_bio");
 var iskola = document.getElementById("nav_sajat");

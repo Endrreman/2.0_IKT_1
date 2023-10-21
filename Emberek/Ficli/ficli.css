@@ -1,12 +1,12 @@
-main .row .col:nth-child(1){
+main .row .col:nth-child(1) .img{
     background: url(img/pusztai\ macska.jpeg) no-repeat center center/cover;
 }
-main .row .col:nth-child(2){
+main .row .col:nth-child(2) .img{
     background: url(img/afrikai\ aranymacska.jpg) no-repeat center center/cover;
 }
-main .row .col:nth-child(3){
+main .row .col:nth-child(3) .img{
     background: url(img/Acinonyx\ aicha.jpg) no-repeat center center/cover;
 }
-main .row .col:nth-child(4){
+main .row .col:nth-child(4) .img{
     background: url(img/cibetmacskafélék.jpg) no-repeat center center/cover;
 }

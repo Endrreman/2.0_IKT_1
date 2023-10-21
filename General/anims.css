@@ -73,6 +73,11 @@
         opacity: 1;
     }
 }
+
+.hr_load{
+    width: 80%;
+}
+
 header > h1{
     animation: up-down 1s ease;
 }
