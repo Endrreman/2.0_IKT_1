@@ -56,7 +56,7 @@
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
 
-    background: url(img/cat.jpg) no-repeat center center/cover;
+    background: url(../Emberek/Endre/img/hamter-3.jpg) no-repeat center center/cover;
 }
 
     /*col contents*/
@@ -131,10 +131,10 @@
 }
 /*Endre*/
 .main_row > .col:nth-child(3) .in_col:nth-child(1){
-    background: url(img/dog1.jpg) no-repeat center center/cover;
+    background: url(../Emberek/Endre/img/hamter-1.jpg) no-repeat center center/cover;
 }
 .main_row > .col:nth-child(3) .in_col:nth-child(2){
-    background: url(img/dog1.jpg) no-repeat center center/cover;
+    background: url(../Emberek/Endre/img/hamter-2.jpg) no-repeat center center/cover;
 }
 /*all*/
 .main_row > .col .in_col:nth-child(2){
